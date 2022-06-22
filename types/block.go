@@ -89,3 +89,13 @@ type Signature []byte
 type IntermediateStateRoots struct {
 	RawRootsList [][]byte
 }
+
+type FraudProof struct {
+	BlockHeight    uint64
+	StateWitnesses []*StateWitness
+}
+
+type StateWitness struct {
+	Key   []byte
+	Value []byte
+}
